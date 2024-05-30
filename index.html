@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeeRex Store</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/imges/t-shirt.png"
+      type="image/x-icon"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- header-->
+    <header>
+      <nav class="nav-header">
+        <div class="nav-header-title nav-header-hover">
+          <h2>TeeRex Store</h2>
+        </div>
+        <div class="nav-header-menu">
+          <h4 class="nav-header-menu-name nav-header-hover">
+            Products
+            <hr width="70px" />
+          </h4>
+
+          <div class="nav-header-menu-icon" aria-label="Cart">
+            <a
+              href="./shopping-cart/cart.html"
+              class="nav-header-menu-navigation"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                class="nav-header-hover-icon"
+              >
+                <path
+                  fill="currentColor"
+                  d="M7.308 21.115q-.633 0-1.067-.433q-.433-.434-.433-1.067q0-.632.433-1.066q.434-.434 1.067-.434q.632 0 1.066.434t.434 1.066t-.434 1.067q-.434.433-1.066.433m9.384 0q-.632 0-1.066-.433q-.434-.434-.434-1.067q0-.632.434-1.066t1.066-.434t1.067.434t.433 1.066t-.433 1.067t-1.067.433M5.392 4.5h13.02q.651 0 .98.532t.035 1.095l-2.858 5.208q-.217.365-.564.573t-.763.207H8.1l-1.215 2.231q-.154.23-.01.5t.433.27h10.384q.214 0 .357.143t.143.356t-.143.357t-.357.143H7.308q-.875 0-1.306-.737q-.43-.738-.021-1.482l1.504-2.68L3.808 3.5H2.5q-.213 0-.357-.143T2 3t.143-.357Q2.287 2.5 2.5 2.5h1.433q.236 0 .429.121q.192.121.298.339z"
+                />
+              </svg>
+              <div class="nav-header-menu-icon-badge">0</div></a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero-section -->
+    <main>
+      <!-- search part -->
+      <section>
+        <div class="search">
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Search products by Name , colour and Type"
+          />
+
+          <div class="search-wrap">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              class="search-icon"
+            >
+              <path
+                fill="currentColor"
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- side-filter -->
+      <section class="main-content">
+        <div class="filter">
+          <h4 class="filter-heading">FILTER BY</h4>
+
+          <!-- colour-list -->
+          <ul class="list">
+            <h5 class="list-heading">Colour</h5>
+            <li class="list-input">
+              <input type="checkbox" id="red" class="list-input-main" /><label
+                for="red"
+                class="list-input-label"
+                >Red</label
+              >
+            </li>
+            <li class="list-input">
+              <input type="checkbox" id="blue" class="list-input-main" /><label
+                for="blue"
+                class="list-input-label"
+                >Blue</label
+              >
+            </li>
+            <li class="list-input">
+              <input type="checkbox" id="green" class="list-input-main" /><label
+                for="green"
+                class="list-input-label"
+                >Green</label
+              >
+            </li>
+          </ul>
+          <!-- gender-list -->
+          <ul class="list">
+            <h5 class="list-heading">Gender</h5>
+            <li class="list-input">
+              <input type="checkbox" id="men" class="list-input-main" /><label
+                for="men"
+                class="list-input-label"
+                >Men</label
+              >
+            </li>
+            <li class="list-input">
+              <input type="checkbox" id="women" class="list-input-main" /><label
+                for="women"
+                class="list-input-label"
+                >Women</label
+              >
+            </li>
+          </ul>
+
+          <!-- price-list -->
+          <ul class="list">
+            <h5 class="list-heading">Price</h5>
+            <li class="list-input">
+              <input
+                type="checkbox"
+                id="initial-cost"
+                class="list-input-main"
+              /><label for="initial-cost" class="list-input-label"
+                >0-Rs250</label
+              >
+            </li>
+            <li class="list-input">
+              <input
+                type="checkbox"
+                id="second-range"
+                class="list-input-main"
+              /><label for="second-range" class="list-input-label"
+                >Rs251-450</label
+              >
+            </li>
+            <li class="list-input">
+              <input
+                type="checkbox"
+                id="third-range"
+                class="list-input-main"
+              /><label for="third-range" class="list-input-label"
+                >Rs450 & above</label
+              >
+            </li>
+          </ul>
+
+          <!-- type-list -->
+          <ul class="list">
+            <h5 class="list-heading">Type</h5>
+            <li class="list-input">
+              <input type="checkbox" id="polo" class="list-input-main" /><label
+                for="polo"
+                class="list-input-label"
+                >Polo</label
+              >
+            </li>
+            <li class="list-input">
+              <input
+                type="checkbox"
+                id="hoodie"
+                class="list-input-main"
+              /><label for="hoodie" class="list-input-label">Hoodie</label>
+            </li>
+            <li class="list-input">
+              <input type="checkbox" id="basic" class="list-input-main" /><label
+                for="basic"
+                class="list-input-label"
+                >Basic</label
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- product-card -->
+        <div class="product-card">
+          <!-- red-hoodie-->
+          <div class="product-card-1 product-card-div1 men">
+            <div class="product-card-div2">
+              <h5 class="product-card-div2-name">Red hoodie</h5>
+              <img
+                src="./assets/imges/red-hoodie.png"
+                alt="red-hoodie"
+                class="product-card-div2-img"
+                width="200px"
+                height="200px"
+              />
+            </div>
+            <div class="product-card-div3">
+              <h5 class="product-card-div3-price"><span>Rs:</span>500</h5>
+              <p class="product-card-div3-stock">
+                Available:<span class="product-card-div3-stock-value">8</span>
+              </p>
+            </div>
+            <span class="product-card-div3-addtocart">Add to cart</span>
+          </div>
+          <!-- blue-polo-->
+          <div class="product-card-2 product-card-div1 men">
+            <div class="product-card-div2">
+              <h5 class="product-card-div2-name">Blue polo</h5>
+              <img
+                src="./assets/imges/blue-polo.png"
+                alt="blue-tshirt"
+                class="product-card-div2-img"
+                width="200px"
+                height="200px"
+              />
+            </div>
+            <div class="product-card-div3">
+              <h5 class="product-card-div3-price"><span>Rs:</span>350</h5>
+              <p class="product-card-div3-stock">
+                Available:<span class="product-card-div3-stock-value">12</span>
+              </p>
+            </div>
+            <span class="product-card-div3-addtocart">Add to cart</span>
+          </div>
+          <!-- green-basic-->
+          <div class="product-card-3 product-card-div1 women">
+            <div class="product-card-div2">
+              <h5 class="product-card-div2-name">Green basic tshirt</h5>
+              <img
+                src="./assets/imges/green-basic.png"
+                alt="green-tshirt"
+                class="product-card-div2-img"
+                width="200px"
+                height="200px"
+              />
+            </div>
+            <div class="product-card-div3">
+              <h5 class="product-card-div3-price"><span>Rs:</span>200</h5>
+              <p class="product-card-div3-stock">
+                Available:<span class="product-card-div3-stock-value">40</span>
+              </p>
+            </div>
+            <span class="product-card-div3-addtocart">Add to cart</span>
+          </div>
+
+          <!--red-polo-->
+          <div class="product-card-1 product-card-div1 men">
+            <div class="product-card-div2">
+              <h5 class="product-card-div2-name">Red polo</h5>
+              <img
+                src="./assets/imges/red-polo.png"
+                alt="red-tshirt"
+                class="product-card-div2-img"
+                width="200px"
+                height="200px"
+              />
+            </div>
+            <div class="product-card-div3">
+              <h5 class="product-card-div3-price"><span>Rs:</span>330</h5>
+              <p class="product-card-div3-stock">
+                Available:<span class="product-card-div3-stock-value">20</span>
+              </p>
+            </div>
+            <span class="product-card-div3-addtocart">Add to cart</span>
+          </div>
+          <!--blue-basic -->
+          <div class="product-card-2 product-card-div1 women">
+            <div class="product-card-div2">
+              <h5 class="product-card-div2-name">Blue basic tshirt</h5>
+              <img
+                src="./assets/imges/blue-basic.png"
+                alt="blue-tshirt"
+                class="product-card-div2-img"
+                width="200px"
+                height="200px"
+              />
+            </div>
+            <div class="product-card-div3">
+              <h5 class="product-card-div3-price"><span>Rs:</span>230</h5>
+              <p class="product-card-div3-stock">
+                Available:<span class="product-card-div3-stock-value">35</span>
+              </p>
+            </div>
+            <span class="product-card-div3-addtocart">Add to cart</span>
+          </div>
+          <!-- green-hoodie -->
+          <div class="product-card-3 product-card-div1 women">
+            <div class="product-card-div2">
+              <h5 class="product-card-div2-name">Green hoodie</h5>
+              <img
+                src="./assets/imges/green-hoodie.png"
+                alt="green-hoodie"
+                class="product-card-div2-img"
+                width="200px"
+                height="200px"
+              />
+            </div>
+            <div class="product-card-div3">
+              <h5 class="product-card-div3-price"><span>Rs:</span>380</h5>
+              <p class="product-card-div3-stock">
+                Available:<span class="product-card-div3-stock-value">15</span>
+              </p>
+            </div>
+            <span class="product-card-div3-addtocart">Add to cart</span>
+          </div>
+
+          <!-- red-basic-->
+          <div class="product-card-1 product-card-div1 women">
+            <div class="product-card-div2">
+              <h5 class="product-card-div2-name">Red basic tshirt</h5>
+              <img
+                src="./assets/imges/red-basic.png"
+                alt="red-tshirt"
+                class="product-card-div2-img"
+                width="200px"
+                height="200px"
+              />
+            </div>
+            <div class="product-card-div3">
+              <h5 class="product-card-div3-price"><span>Rs:</span>260</h5>
+              <p class="product-card-div3-stock">
+                Available:<span class="product-card-div3-stock-value">22</span>
+              </p>
+            </div>
+            <span class="product-card-div3-addtocart">Add to cart</span>
+          </div>
+          <!-- blue-hoodie3 -->
+
+          <div class="product-card-2 product-card-div1 women">
+            <div class="product-card-div2">
+              <h5 class="product-card-div2-name">Blue hoodie</h5>
+              <img
+                src="./assets/imges/blue-hoodie.png"
+                alt="blue-hoodie"
+                class="product-card-div2-img"
+                width="200px"
+                height="200px"
+              />
+            </div>
+            <div class="product-card-div3">
+              <h5 class="product-card-div3-price"><span>Rs:</span>450</h5>
+              <p class="product-card-div3-stock">
+                Available:<span class="product-card-div3-stock-value">12</span>
+              </p>
+            </div>
+            <span class="product-card-div3-addtocart">Add to cart</span>
+          </div>
+          <!-- green-polo-->
+          <div class="product-card-3 product-card-div1 men">
+            <div class="product-card-div2">
+              <h5 class="product-card-div2-name">Green polo</h5>
+              <img
+                src="./assets/imges/green-polo.png"
+                alt="green-tshirt"
+                class="product-card-div2-img"
+                width="200px"
+                height="200px"
+              />
+            </div>
+            <div class="product-card-div3">
+              <h5 class="product-card-div3-price"><span>Rs:</span>350</h5>
+              <p class="product-card-div3-stock">
+                Available:<span class="product-card-div3-stock-value">17</span>
+              </p>
+            </div>
+            <span class="product-card-div3-addtocart">Add to cart</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="footer-section">
+      <div class="footer-section-wrap">
+        <a
+          href="https://www.linkedin.com/in/madhavaraj-c?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
+              class="footer-section-icon"/></svg></a>
+
+        <a href="https://github.com/madhavaraj1111" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
+              class="footer-section-icon"
+            /></svg></a>
+
+        <a
+          href="https://www.instagram.com/mr.maddy_005?igsh=YTNlanNrempiaWhh"
+          target="_blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+              class="footer-section-icon"
+            /></svg></a>
+
+        <a
+          href="https://www.facebook.com/profile.php?id=100040812000258&mibextid=ZbWKwL"
+          target="_blank"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02"
+              class="footer-section-icon"
+            /></svg></a>
+      </div>
+    </footer>
+    <!-- javascript -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

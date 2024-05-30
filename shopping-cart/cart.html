@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeeRex Store | Shoppingcart</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+     <!-- favicon -->
+     <link rel="shortcut icon" href="../assets/imges/t-shirt.png" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+
+  <body>
+    <!-- header-->
+    <header>
+      <nav class="nav-header">
+        <div class="nav-header-title nav-header-hover">
+          <h2>TeeRex Store</h2>
+        </div>
+        <div class="nav-header-menu">
+          <a href="../index.html"  class="nav-header-menu-navigate"><h4 class="nav-header-menu-name nav-header-hover">Products</h4></a>
+          <div>
+            <div class="nav-header-menu-icon" aria-label="Cart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                class="nav-header-hover-icon"
+              >
+                <path
+                  fill="currentColor"
+                  d="M7.308 21.115q-.633 0-1.067-.433q-.433-.434-.433-1.067q0-.632.433-1.066q.434-.434 1.067-.434q.632 0 1.066.434t.434 1.066t-.434 1.067q-.434.433-1.066.433m9.384 0q-.632 0-1.066-.433q-.434-.434-.434-1.067q0-.632.434-1.066t1.066-.434t1.067.434t.433 1.066t-.433 1.067t-1.067.433M5.392 4.5h13.02q.651 0 .98.532t.035 1.095l-2.858 5.208q-.217.365-.564.573t-.763.207H8.1l-1.215 2.231q-.154.23-.01.5t.433.27h10.384q.214 0 .357.143t.143.356t-.143.357t-.357.143H7.308q-.875 0-1.306-.737q-.43-.738-.021-1.482l1.504-2.68L3.808 3.5H2.5q-.213 0-.357-.143T2 3t.143-.357Q2.287 2.5 2.5 2.5h1.433q.236 0 .429.121q.192.121.298.339z"
+                />
+              </svg>
+
+              <div class="nav-header-menu-icon-badge">0</div>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- shoppingcart -->
+    <section>
+      <h5 class="cart-title">Shopping cart</h5>
+<div class="cart-card">
+  <div class="cart-wrap">  
+    <div class="cart-product">
+        <div class="cart-product-tshirt">
+          <img src="./images/blue-basic.png" alt="tshirt" width="120px" />
+          <div class="cart-product-desc">
+            <p class="cart-product-name">tshirt</p>
+            <h5 class="cart-product-price"><span>Rs:</span>000</h5>
+          </div>
+        </div>
+
+        <div class="cart-product-quantity">
+          <div class="cart-product-quantity-wrap">
+            <button class="cart-product-quantity-decrement">
+              <span>-</span>
+            </button>
+            <input
+              type="text"
+              placeholder="Qty"
+              class="cart-product-quantity-input"
+            />
+            <button class="cart-product-quantity-increment">
+              <span>+</span>
+            </button>
+          </div>
+          <button class="cart-product-quantity-delete">Remove</button>
+        </div>
+      </div></div>
+      
+      <hr class="cart-card-hr">
+    </div>
+    <div class="cart-amount">
+      <h5 class="cart-amount-totalname">Total amount : <span class="cart-amount-totalname-rs">Rs.<span class="cart-amount-totalname-rs-price">230</span> </span></h5>
+    </div>
+    </section>
+
+    <!-- javascript -->
+    <script src="./js/cart.js"></script>
+  </body>
+</html>
